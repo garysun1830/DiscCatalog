@@ -1,0 +1,112 @@
+@charset "utf-8";
+// Customization
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+/*
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+$blue: #06bcef;
+// Add pink and its invert
+$pink: #ff8080;
+$pink-invert: #fff;
+// Update the sans-serif font family
+$family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+*/
+
+@import "../node_modules/bulma/bulma";
+html {
+    background-color: $green;
+    .bd-notification.is-primary {
+        background-color: #00d1b2;
+        color: #fff;
+        text-align: center;
+    }
+    .bd-notification.is-info {
+        background-color: #3e8ed0;
+        color: #fff;
+    }
+    .bd-notification.is-danger {
+        background-color: #f14668;
+        color: #fff;
+    }
+    .bd-notification.is-primary {
+        background-color: #00d1b2;
+        color: #fff;
+    }
+    .ele-back {
+        background-color: #fff;
+        color: #000
+    }
+    .bd-icon-size .icon {
+        background-color: #ffe08a;
+        color: #000
+    }
+    .table.is-hoverable tbody tr:not(.is-selected):hover {
+        background-color: rgb(74, 196, 125);
+    }
+    .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover {
+        background-color: rgb(74, 196, 125);
+    }
+    .table.is-hoverable.is-striped tbody tr:not(.is-selected):hover:nth-child(even) {
+        background-color: rgb(74, 196, 125);
+    }
+    .dropdown-div {
+        height: 60px;
+    }
+    .dropdown.is-active .dropdown-menu,
+    .dropdown.is-hoverable:hover .dropdown-menu {
+        display: none;
+    }
+    .dropdown.is-active .dropdown-menu,
+    .dropdown.is-hoverable:hover .dropdown-menu {
+        display: block;
+    }
+    .comp-section {
+        padding: 20px;
+    }
+    .comp-section.is-blue {
+        background-color: rgb(43, 120, 198);
+    }
+    .comp-section.is-white {
+        background-color: #fff;
+        color: #333;
+    }
+    section {
+        margin: 20px;
+    }
+    section input {
+        margin-bottom: 20px;
+    }
+    section textarea {
+        margin-bottom: 20px;
+    }
+    section .select,
+    section select {
+        margin-bottom: 20px;
+    }
+    section .control.has-icons-left {
+        margin-bottom: 20px;
+    }
+    background-color: #fff;
+    font-size: 16px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    min-width: 300px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+}
